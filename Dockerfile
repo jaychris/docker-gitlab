@@ -3,7 +3,7 @@ MAINTAINER jbrooks@redhat.com
 
 RUN yum update -y; yum clean all
 RUN yum -y install epel-release; yum clean all
-RUN yum install -y supervisor logrotate nginx openssh-server \
+RUN yum install -y nodejs supervisor logrotate nginx openssh-server \
     git postgresql ruby rubygems python python-docutils \
     mariadb-devel libpqxx zlib libyaml gdbm readline redis \
     ncurses libffi libxml2 libxslt libcurl libicu rubygem-bundler \
